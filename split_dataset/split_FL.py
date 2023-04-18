@@ -69,7 +69,7 @@ if __name__ == '__main__':
         pbar.close()
 
         with open(os.path.join(output_dir,'ID2idx.pickle'),'wb') as f:
-            pickle.dump(ID_dict,f,protocol=5)
+            pickle.dump(ID_dict,f,protocol=4)
     else:
         print('- ID2idx pickle found ! loading...')
         with open(os.path.join(output_dir,'ID2idx.pickle'),'rb') as f:

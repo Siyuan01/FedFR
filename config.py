@@ -11,10 +11,10 @@ config.lr = 0.05  # batch size is 512  #arg
 config.step = [6,14] #arg
 
 if config.dataset == "ms1m_split":
-    config.rec = "/content/face_recognition/mslm_split"
+    config.rec = "/kaggle/working/face_recognition/mslm_split"
     # config.val_rec =  "/lssd1/face_recognition/val"
-    config.val_rec =  "/content/face_recognition/val"
-    config.local_rec = "/content/face_recognition/ms1m_split/local_veri_4000"
+    config.val_rec =  "/kaggle/working/face_recognition/val"
+    config.local_rec = "/kaggle/working/face_recognition/ms1m_split/local_veri_4000"
     config.num_epoch = 16  #arg
     # config.val_targets = ["agedb_30",'cfp_fp']
     config.val_targets = ['agedb_30']
